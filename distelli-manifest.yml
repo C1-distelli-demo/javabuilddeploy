@@ -28,4 +28,4 @@ c1distellidemo/javabuilddeploy:
   PkgInclude:
     - target/*.jar
     - lib/*.jar
-    
+  
