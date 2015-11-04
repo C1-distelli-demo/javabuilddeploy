@@ -1,4 +1,4 @@
-bmcgehee/javabuilddeploy:
+c1distellidemo/javabuilddeploy:
 
   Env:
     - CLASSPATH: 'target/*:lib/*'
