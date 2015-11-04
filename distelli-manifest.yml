@@ -21,6 +21,11 @@ c1distellidemo/javabuilddeploy:
     - echo "Beginning PreInstall"
     - sudo apt-get -y update
     - sudo apt-get -y install default-jre
+
+  PostInstall:
+    - echo "Beginning PostInstall"
+    - publicip=$(curl -s ident.me)
+    - echo "Public IP http://$publicip:$8080"
     
   Exec:
     - exec $JAVA_HOME/bin/java -cp $CLASSPATH $JVM_ARGS com.example.app.SimpleJavaApp $ARGS
