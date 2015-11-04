@@ -25,7 +25,7 @@ c1distellidemo/javabuilddeploy:
   PostInstall:
     - echo "Beginning PostInstall"
     - publicip=$(curl -s ident.me)
-    - echo "Public IP http://$publicip:$8080"
+    - echo "Public IP http://$publicip:$PORT"
     
   Exec:
     - exec $JAVA_HOME/bin/java -cp $CLASSPATH $JVM_ARGS com.example.app.SimpleJavaApp $ARGS
